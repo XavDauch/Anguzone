@@ -1,0 +1,20 @@
+div
+  class="p-3 align-items-center row my-3 product product-{{ product?.categorie }}"
+  *ngIf="product"
+>
+  <div class="col">
+    <div>
+      <span class="product-name">{{ product.name }}</span>
+      <span class="product-price">{{ product.price }}</span>
+      <span class="product-categorie">{{ product.categorie }}</span>
+      <span class="product-image">{{ product.image }}</span>
+      <span class="product-description">{{ product.description }}</span>
+     
+    </div>
+  </div>
+  <div class="col btn-delete-col">
+    <button (click)="onDeleteBtnClick()" class="btn btn-primary">
+      Supprimer
+    </button>
+  </div>
+</div>
